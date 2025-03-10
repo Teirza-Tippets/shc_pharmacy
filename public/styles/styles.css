@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/* Global Styles */
+* {
+    box-sizing: border-box; /* Ensures padding and borders are included in width/height calculations */
+}
+
+body {
+    font-family: 'Roboto Slab', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea; /* Slightly darker for better contrast */
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    justify-content: space-between; /* Distributes space */
+    background-color: black; /* Light gray background */
+    padding: 10px 20px; /* Adds spacing */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    flex-grow: 1; /* Makes sure the title takes available space */
+    text-align: center;
+    color: white;
+}
+
+header a {
+    text-decoration: none; /* Removes underline */
+    color: #007bff; /* Blue color for the link */
+    font-weight: bold;
+}
+
+/* Image Container */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 50vh;  /* Make it responsive based on viewport height */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Grid */
+main {
+    padding: 20px;
+}
+
+main div{
+    background-color: #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.main-img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 10px; /* Reduced horizontal padding for mobile */
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* FAQs */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px;
+}
+
+.faq-table, .submission-table {
+    width: 45%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 8px;  /* Increased padding */
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;  /* Alternating row colors */
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;  /* Added transition for hover effect */
+}
+
+button:hover {
+    background-color: #45a049;
+}

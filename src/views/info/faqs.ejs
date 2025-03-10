@@ -1,0 +1,49 @@
+
+    <div class="container">
+        <!-- FAQ Table -->
+        <div class="faq-table">
+            <h3>Frequently Asked Questions</h3>
+            <table>
+                <tr>
+                    <th>Question</th>
+                    <th>Answer</th>
+                </tr>
+                <tr>
+                    <td>What is the pharmacy's hours?</td>
+                    <td>We are open from 9 AM to 5 PM, Monday to Friday.</td>
+                </tr>
+                <tr>
+                    <td>How can I refill a prescription?</td>
+                    <td>You can refill your prescription online or call us.</td>
+                </tr>
+                <tr>
+                    <td>Do you accept insurance?</td>
+                    <td>Yes, we accept most major insurance providers.</td>
+                </tr>
+            </table>
+        </div>
+    
+        <!-- Question Submission Table -->
+        <div class="submission-table">
+            <h3>Submit Your Question</h3>
+            <form action="submit_question.php" method="POST">
+                <table>
+                    <tr>
+                        <td><label for="name">Your Name:</label></td>
+                        <td><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Your Email:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="question">Your Question:</label></td>
+                        <td><textarea id="question" name="question" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit">Submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
