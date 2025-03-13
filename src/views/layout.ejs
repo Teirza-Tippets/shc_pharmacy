@@ -11,7 +11,11 @@
         <%- include('partials/header') %>
 
     <div class="image-container">
-        <img src="/images/design2.jpg" alt="Pharmacy Background Image">
+        <picture>
+            <source srcset="images/small-pharmacy.webp" media="(max-width: 500px)">
+            <source srcset="images/medium-pharmacy.webp" media="(max-width: 750px)">
+            <img src="/images/large-pharmacy.webp" alt="table setting" width="1500" height="600">
+        </picture>
         <div class="overlay-text">Pharmacy</div>
     </div>
         <%- include('partials/navbar') %>
