@@ -2,13 +2,13 @@
 
 /* Global Styles */
 * {
-    box-sizing: border-box; /* Ensures padding and borders are included in width/height calculations */
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Roboto Slab', sans-serif;
     margin: 0;
-    padding: 0;
+
     background-color: #eaeaea; /* Slightly darker for better contrast */
 }
 
@@ -157,4 +157,28 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+.med-card {
+    border: 1px solid #ddd;
+    width: 40%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
