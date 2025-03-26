@@ -1,8 +1,15 @@
 <div class="login-container">
+    <% if (messages.error) { %>
+        <div class="alert alert-danger"><%= messages.error %></div>
+      <% } %>      
     <h2>Login</h2>
-    <form action="/login" method="post">
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
+    <form action="/account/login" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      
         <button type="submit">Login</button>
-    </form>
+    </form>      
 </div>

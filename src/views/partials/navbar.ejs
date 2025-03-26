@@ -1,9 +1,15 @@
 <nav>
-    <ul>
-      <li><a href="/info/welcome">Welcome</a></li>
-      <li><a href="/info/howtofill">Start Filling</a></li>
-      <li><a href="/info/insurance">Insurance Information</a></li>
-      <li><a href="/info/faqs">FAQs</a></li>
+  <ul>
+    <li><a href="/">Welcome</a></li>
+    <li><a href="/info/howtofill">How to Fill</a></li>
+    <li><a href="/info/insurance">Insurance Info</a></li>
+    <li><a href="/info/faqs">FAQs</a></li>
+    
+    <% if (user) { %> 
       <li><a href="/student/dashboard">Student Dashboard</a></li>
-    </ul>
+      <li><a href="/account/logout">Logout</a></li>
+    <% } else { %>
+      <li><a href="/account/login">Login</a></li>
+    <% } %>
+  </ul>
 </nav>
